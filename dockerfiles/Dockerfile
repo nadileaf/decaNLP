@@ -27,7 +27,7 @@ ENV LANG en_US.UTF-8
 ENV LANGUAGE en_US:en  
 ENV LC_ALL en_US.UTF-8
 
-RUN conda install -c pytorch pytorch=0.3 cuda90
+RUN conda install -c -y pytorch pytorch=0.3 cuda90
 
 # Revtok
 RUN pip install -e git+https://github.com/jekbradbury/revtok.git#egg=revtok
